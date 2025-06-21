@@ -43,6 +43,7 @@ torch                   2.4.1
 
 
 - identifier_tokenizer
+  
   -- generate_vocab.py # Generates corpus (vocab_list.txt) for training the identifier tokenizer and build the vocabulary for name recovery
   
   -- train_identifier_tokenizer.py # Training the identifier tokenizer to acquire the complexity variable name 
@@ -50,6 +51,7 @@ torch                   2.4.1
 
 
 - process
+  
   -- data_origin.py # Extracts data sources of variable instances
   
   -- preprocess_data.py # Converts input decompiled code into model-acceptable format
@@ -61,6 +63,7 @@ torch                   2.4.1
 
 
 - approach
+  
   -- eval_inf.py # Infer and evaluate
   
   -- model.py # Model 
