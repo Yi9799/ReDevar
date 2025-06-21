@@ -3,21 +3,34 @@
 ## Dataset
 
 VarBERT：https://www.dropbox.com/scl/fo/3thmg8xoq2ugtjwjcgjsm/h?rlkey=azgjeq513g4semc1qdi5xyroj&dl=0
+
 Resym：https://zenodo.org/records/13923982
 
 ## Requirements
 
 python                   3.8
+
 numpy                   1.24.3
+
 tqdm                    4.66.5
+
 transformers            4.46.3
+
 pandas                  2.0.3
+
 scikit-learn            1.3.2
+
 pycparser               2.22
+
 tensorboard             2.14.0
+
 tensorboardX            2.6.2.2
+
 tokenizers              0.20.0
+
 torch                   2.4.1
+
+
 
 ## The directory structure and contents  are as follows
 
@@ -31,23 +44,31 @@ torch                   2.4.1
 
 - identifier_tokenizer
   -- generate_vocab.py # Generates corpus (vocab_list.txt) for training the identifier tokenizer and build the vocabulary for name recovery
+  
   -- train_identifier_tokenizer.py # Training the identifier tokenizer to acquire the complexity variable name 
 
 
 
 - process
   -- data_origin.py # Extracts data sources of variable instances
+  
   -- preprocess_data.py # Converts input decompiled code into model-acceptable format
+  
   -- exclude_invalid.py # Filters out invalid samples from the dataset
+  
   -- for_Resym.py # Converts dataset into Resym-compatible format
 
 
 
 - approach
   -- eval_inf.py # Infer and evaluate
+  
   -- model.py # Model 
+  
   -- train_val.py # Train and validate
+  
   -- utils.py # Includes data loading and utility functions
+  
   -- resize_model.py # Adjusts model size when necessary
 
 
